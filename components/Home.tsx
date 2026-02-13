@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { THEME_COLOR, BOOTH_NO } from '../constants';
+import { THEME_COLOR, BOOTH_NO, LOGO_DATA } from '../constants';
 
 interface HomeProps {
   onStart: () => void;
@@ -10,13 +10,10 @@ const Home: React.FC<HomeProps> = ({ onStart }) => {
   return (
     <div className="h-full flex flex-col items-center justify-between py-12 text-center">
       <div className="w-full space-y-8 animate-in fade-in slide-in-from-top duration-1000">
-        {/* Logo Placeholder */}
+        {/* Official Logo */}
         <div className="flex justify-center mb-4">
-          <div className="bg-white px-4 py-2 rounded shadow-lg flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: THEME_COLOR }}>
-              <span className="text-white font-bold text-xs">MB</span>
-            </div>
-            <span className="text-slate-900 font-bold tracking-tight">MediumBank</span>
+          <div className="bg-white/90 px-6 py-3 rounded-2xl shadow-xl backdrop-blur-sm flex items-center justify-center border border-white/50">
+            <img src={LOGO_DATA} alt="MediumBank" className="h-10 object-contain" />
           </div>
         </div>
 
