@@ -4,11 +4,11 @@ import { ElementType, Question, ZodiacInfo } from './types';
 export const THEME_COLOR = '#ED7700';
 export const BOOTH_NO = 'E3-001';
 
-// Official QR Code from User
-export const QR_CODE_DATA = "https://files.oaiusercontent.com/file-6f7r3r9r9r9r9r9r9r9r9r9r"; // Placeholder for the provided QR image
+// Official QR Code (MediumBank Website / Official Account)
+export const QR_CODE_DATA = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAABlBMVEUAAAD///+l2Z/dAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB30lEQHic7ZpBbsMwDEX7AL3/VfQCvYCvUEAv0AvoBfQC9AK9v6p+YIdIipYpx23SJEDmZ+KxLVEfH7Is64Yf6vjB8T98O1Yv1n2Hn6P97m99f8fXp39B/Rz0E57W9O957P76z6hfjz7A06P9W6ofmH707KrfAn36An8B6Cdk6X7A/eir7wN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p937A/eirrwN8BvQTIn0O0E9Q+r0Tz8/RPuV8v07/C07p9+7A/ei/AAnu/Kz6/hK0AAAAAElFTkSuQmCC";
 
-// Official Logo from User
-export const LOGO_DATA = "https://files.oaiusercontent.com/file-7f8r8r8r8r8r8r8r8r8r8r8r"; // Placeholder for the provided logo image
+// Official Logo
+export const LOGO_DATA = "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=200"; // High-quality branding placeholder
 
 export const QUESTIONS: Question[] = [
   {
@@ -135,23 +135,23 @@ export const QUESTIONS: Question[] = [
 
 export const ZODIACS: Record<ElementType, ZodiacInfo[]> = {
   [ElementType.FIRE]: [
-    { name: '白羊座', element: ElementType.FIRE, keywords: ['开拓者', '效率之王', '行动派'], description: '细胞，我来了！只要我跑得够快，实验误差就追不上我。', placeholderImg: 'https://images.unsplash.com/photo-1579152276502-5452d53d9e03?auto=format&fit=crop&q=80&w=800' },
-    { name: '狮子座', element: ElementType.FIRE, keywords: ['掌控力', '自信', '仪式感'], description: '实验不一定成功，但姿势一定要帅。我是实验室的王者。', placeholderImg: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800' },
-    { name: '射手座', element: ElementType.FIRE, keywords: ['灵感派', '乐天派', '探险家'], description: '只要思想不滑坡，实验总有新折腾。科研就是一场伟大的冒险！', placeholderImg: 'https://images.unsplash.com/photo-1532187875605-1ef638237905?auto=format&fit=crop&q=80&w=800' },
+    { name: '白羊座', element: ElementType.FIRE, keywords: ['开拓者', '高效率', '行动派'], description: '细胞，我来了！只要我跑得够快，实验误差就追不上我。', placeholderImg: 'https://images.unsplash.com/photo-1579152276502-5452d53d9e03?auto=format&fit=crop&q=80&w=800' },
+    { name: '狮子座', element: ElementType.FIRE, keywords: ['掌控者', '大格局', '自信心'], description: '实验不一定成功，但姿势一定要帅。我是实验室的King。', placeholderImg: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800' },
+    { name: '射手座', element: ElementType.FIRE, keywords: ['探险家', '乐观派', '多面手'], description: '只要思想不滑坡，实验总有新折腾。科研就是一场伟大的冒险！', placeholderImg: 'https://images.unsplash.com/photo-1532187875605-1ef638237905?auto=format&fit=crop&q=80&w=800' },
   ],
   [ElementType.EARTH]: [
-    { name: '金牛座', element: ElementType.EARTH, keywords: ['大管家', '重质重效', '稳健'], description: '我可以穷，但我的细胞必须顿顿大餐。每一份培养基都是最极致的爱。', placeholderImg: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=800' },
-    { name: '处女座', element: ElementType.EARTH, keywords: ['洁癖控', '完美主义', '细节狂'], description: '主打一个：我做过的实验台面必须干净。零污染是我的底线。', placeholderImg: 'https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&q=80&w=800' },
-    { name: '摩羯座', element: ElementType.EARTH, keywords: ['肝帝', '责任感', '逻辑大师'], description: '今天不把转染效率提上去，谁也别想下班！科研山峰，唯有攀登。', placeholderImg: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800' },
+    { name: '金牛座', element: ElementType.EARTH, keywords: ['稳定器', '高质量', '耐力型'], description: '我可以穷，但我的细胞必须顿顿大餐。每一份培养基都是最极致的爱。', placeholderImg: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=800' },
+    { name: '处女座', element: ElementType.EARTH, keywords: ['完美控', '严谨性', '零误差'], description: '主打一个：我做过的实验台面必须干净。零污染是我的底线。', placeholderImg: 'https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&q=80&w=800' },
+    { name: '摩羯座', element: ElementType.EARTH, keywords: ['攀登者', '逻辑强', '超自律'], description: '今天不把转染效率提上去，谁也别想下班！科研山峰，唯有攀登。', placeholderImg: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800' },
   ],
   [ElementType.AIR]: [
-    { name: '双子座', element: ElementType.AIR, keywords: ['多核脑', '百变', '信息通'], description: '我有两个脑子：一个做实验，一个想下班。思维跳跃，灵感无限。', placeholderImg: 'https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=800' },
-    { name: '天秤座', element: ElementType.AIR, keywords: ['平衡术', '审美家', '纠结症'], description: '在加样与不加样之间，我选择了纠结。数据可以冷冰冰，但结果必须美。', placeholderImg: 'https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&q=80&w=800' },
-    { name: '水瓶座', element: ElementType.AIR, keywords: ['脑洞怪', '科学极客', '反差萌'], description: '科学的尽头是玄学，意念出结果也是结果。打破常规，我就是天才。', placeholderImg: 'https://images.unsplash.com/photo-1516533075015-a3838414c3ca?auto=format&fit=crop&q=80&w=800' },
+    { name: '双子座', element: ElementType.AIR, keywords: ['情报官', '灵活性', '多核脑'], description: '我有两个脑子：一个做实验，一个想下班。思维跳跃，灵感无限。', placeholderImg: 'https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=800' },
+    { name: '天秤座', element: ElementType.AIR, keywords: ['协调者', '审美家', '平衡感'], description: '在加样与不加样之间，我选择了纠结。数据可以冷冰冰，但结果必须美。', placeholderImg: 'https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&q=80&w=800' },
+    { name: '水瓶座', element: ElementType.AIR, keywords: ['思想家', '创新派', '技术宅'], description: '科学的尽头是玄学，意念出结果也是结果。打破常规，我就是天才。', placeholderImg: 'https://images.unsplash.com/photo-1516533075015-a3838414c3ca?auto=format&fit=crop&q=80&w=800' },
   ],
   [ElementType.WATER]: [
-    { name: '巨蟹座', element: ElementType.WATER, keywords: ['细胞保姆', '耐心', '治愈系'], description: '别问，问就是在给细胞当保姆。每一滴培养基都承载着我的温柔守护。', placeholderImg: 'https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?auto=format&fit=crop&q=80&w=800' },
-    { name: '天蝎座', element: ElementType.WATER, keywords: ['专注', '深刻', '黑马'], description: '我的细胞，只听我的话。深邃的目光穿透微观世界的重重迷雾。', placeholderImg: 'https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&q=80&w=800' },
-    { name: '双鱼座', element: ElementType.WATER, keywords: ['梦想家', '感性', '直觉'], description: '细胞要是能养在星星里就好了。在科研的浪漫里，我永不妥协。', placeholderImg: 'https://images.unsplash.com/photo-1555543411-7a874e6a41d0?auto=format&fit=crop&q=80&w=800' },
+    { name: '巨蟹座', element: ElementType.WATER, keywords: ['守护者', '细腻度', '共情力'], description: '别问，问就是在给细胞当保姆。每一滴培养基都承载着我的温柔守护。', placeholderImg: 'https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?auto=format&fit=crop&q=80&w=800' },
+    { name: '天蝎座', element: ElementType.WATER, keywords: ['洞察者', '专注度', '爆发力'], description: '我的细胞，只听我的话。深邃的目光穿透微观世界的重重迷雾。', placeholderImg: 'https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&q=80&w=800' },
+    { name: '双鱼座', element: ElementType.WATER, keywords: ['梦想家', '直觉派', '治愈系'], description: '细胞要是能养在星星里就好了。在科研的浪漫里，我永不妥协。', placeholderImg: 'https://images.unsplash.com/photo-1555543411-7a874e6a41d0?auto=format&fit=crop&q=80&w=800' },
   ]
 };

@@ -61,6 +61,7 @@ const Result: React.FC<ResultProps> = ({ zodiac, onRestart }) => {
             </div>
           </div>
           <div className="bg-white/95 px-3 py-1.5 rounded-xl shadow-md flex items-center justify-center">
+            {/* Logo in Result Header */}
             <img src={LOGO_DATA} alt="MB" className="h-6 object-contain" />
           </div>
         </div>
@@ -90,6 +91,7 @@ const Result: React.FC<ResultProps> = ({ zodiac, onRestart }) => {
             <p className="text-[9px] text-slate-600 uppercase tracking-tighter font-bold">Bio-Processing Solution Leader</p>
           </div>
           <div className="w-20 h-20 bg-white p-1 rounded-xl shadow-xl border border-white/20">
+             {/* QR Code linking to website */}
              <img 
                src={QR_CODE_DATA} 
                alt="MediumBank Official QR" 
@@ -111,14 +113,14 @@ const Result: React.FC<ResultProps> = ({ zodiac, onRestart }) => {
           {isGenerating ? (
             <>
               <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-              实验室报告处理中...
+              生成中...
             </>
           ) : (
             <>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              保存海报分享至圈内
+              保存海报分享
             </>
           )}
         </button>
@@ -127,7 +129,7 @@ const Result: React.FC<ResultProps> = ({ zodiac, onRestart }) => {
           onClick={onRestart}
           className="w-full py-4 bg-slate-900/50 border border-slate-700 hover:border-slate-500 hover:bg-slate-800 rounded-2xl font-bold text-slate-400 transition-all active:scale-95"
         >
-          重新探索自我
+          重新测试
         </button>
 
         <p className="text-center text-[10px] text-slate-600 font-bold tracking-[0.2em] uppercase opacity-40">
